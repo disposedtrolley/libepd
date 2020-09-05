@@ -1,10 +1,10 @@
 #include "libepd/libepd.hpp"
 
 namespace libepd {
-    EPaper::EPaper(GPIOManager *busy_pin, GPIOManager *reset_pin, SPIManager *spi, void (*delay)(int milliseconds)) {
-        this->busy_pin = busy_pin;
-        this->reset_pin = reset_pin;
-        this->spi = spi;
+    EPaper::EPaper(GPIOManager& busy_pin, GPIOManager& reset_pin, SPIManager& spi, void (*delay)(int milliseconds)) {
+        this->busy_pin = &busy_pin;
+        this->reset_pin = &reset_pin;
+        this->spi = &spi;
         this->delay = delay;
     }
 
