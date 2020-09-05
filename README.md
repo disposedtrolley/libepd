@@ -1,5 +1,7 @@
 # libepd
 
+![CI](https://github.com/disposedtrolley/libepd/workflows/CI/badge.svg)
+
 ## Tests
 
 Tests are handled by [Catch2](https://github.com/catchorg/Catch2) and built via CMake in the `/tests` directory.
