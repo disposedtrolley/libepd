@@ -20,9 +20,9 @@ namespace libepd {
         void (*delay)(int milliseconds);
 
     public:
-        EPaper(GPIOManager *busy_pin,
-               GPIOManager *reset_pin,
-               SPIManager *spi,
+        EPaper(GPIOManager& busy_pin,
+               GPIOManager& reset_pin,
+               SPIManager& spi,
                void (*delay)(int milliseconds));
 
         void reset();
